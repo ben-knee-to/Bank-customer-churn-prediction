@@ -1,0 +1,16 @@
+feature,mean_absolute_shap
+Age,0.86176413
+NumOfProducts,0.80643296
+IsActiveMember_0,0.32101876
+Geography_Germany,0.23262802
+Balance,0.22480561
+Gender_Female,0.21548332
+EstimatedSalary,0.108495206
+CreditScore,0.103969075
+IsActiveMember_1,0.06514815
+Geography_France,0.041195188
+Tenure,0.037933867
+Gender_Male,0.031445354
+HasCrCard_0,0.025980873
+HasCrCard_1,0.009670665
+Geography_Spain,0.008255979

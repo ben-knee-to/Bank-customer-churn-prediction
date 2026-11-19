@@ -1,0 +1,46 @@
+{
+    "selected_model": "XGBoost",
+    "selection_metric": "mean_5_fold_roc_auc",
+    "training_records": 8000,
+    "training_churn_rate": 0.20375,
+    "features": [
+        "CreditScore",
+        "Age",
+        "Tenure",
+        "Balance",
+        "NumOfProducts",
+        "EstimatedSalary",
+        "Geography",
+        "Gender",
+        "HasCrCard",
+        "IsActiveMember"
+    ],
+    "random_state": 42,
+    "cross_validation_folds": 5,
+    "default_threshold": 0.5,
+    "holdout_evaluated": false,
+    "oof_metrics": {
+        "model": "XGBoost",
+        "threshold": 0.5,
+        "roc_auc": 0.8628415405803662,
+        "pr_auc": 0.7006470632337147,
+        "precision_0_5": 0.7554918815663801,
+        "recall_0_5": 0.4852760736196319,
+        "f1_0_5": 0.5909600298841987,
+        "actual_churn_count": 1630,
+        "predicted_churn_count": 1047,
+        "predicted_churn_rate": 0.130875,
+        "true_positives": 791,
+        "false_positives": 256,
+        "false_negatives": 839,
+        "true_negatives": 6114
+    },
+    "notes": [
+        "All preprocessing fitted inside CV folds.",
+        "Complain excluded due to potential leakage.",
+        "Holdout test set not used for model selection.",
+        "Undefined precision handled with zero_division=0.",
+        "OOF predictions generated on training data only.",
+        "Candidate is not yet approved for deployment."
+    ]
+}

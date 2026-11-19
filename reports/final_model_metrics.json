@@ -1,0 +1,53 @@
+{
+    "model": "XGBoost",
+    "selection_metric": "training_cv_roc_auc",
+    "tuning_cv_roc_auc": 0.8640381966849977,
+    "best_params": {
+        "classifier__subsample": 0.9,
+        "classifier__reg_lambda": 1,
+        "classifier__n_estimators": 350,
+        "classifier__max_depth": 3,
+        "classifier__learning_rate": 0.05,
+        "classifier__colsample_bytree": 0.9
+    },
+    "selected_threshold": 0.30999999999999994,
+    "default_threshold_metrics": {
+        "threshold": 0.5,
+        "accuracy": 0.8695,
+        "precision": 0.788235294117647,
+        "recall": 0.49264705882352944,
+        "f1": 0.6063348416289592,
+        "roc_auc": 0.875906801162676,
+        "pr_auc": 0.7248761705154363,
+        "brier_score": 0.09814591705799103,
+        "true_negatives": 1538,
+        "false_positives": 54,
+        "false_negatives": 207,
+        "true_positives": 201
+    },
+    "optimised_threshold_metrics": {
+        "threshold": 0.30999999999999994,
+        "accuracy": 0.845,
+        "precision": 0.6108597285067874,
+        "recall": 0.6617647058823529,
+        "f1": 0.6352941176470588,
+        "roc_auc": 0.875906801162676,
+        "pr_auc": 0.7248761705154363,
+        "brier_score": 0.09814591705799103,
+        "true_negatives": 1420,
+        "false_positives": 172,
+        "false_negatives": 138,
+        "true_positives": 270
+    },
+    "training_records": 8000,
+    "holdout_records": 2000,
+    "limitations": [
+        "Random stratified holdout, not temporal validation.",
+        "Model selection and tuning used training data.",
+        "Threshold selected using training OOF predictions.",
+        "Hyperparameter selection makes OOF scores optimistic.",
+        "Complain excluded due to suspected leakage.",
+        "Other feature timing remains unverified.",
+        "Holdout should not be reused for further tuning."
+    ]
+}

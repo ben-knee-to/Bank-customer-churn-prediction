@@ -1,0 +1,37 @@
+{
+    "total_customers": 10000,
+    "churned_customers": 2038,
+    "overall_churn_rate_pct": 20.38,
+    "highest_risk_geography": {
+        "segment": "Germany",
+        "customers": 2509,
+        "churn_rate_pct": 32.44
+    },
+    "highest_risk_activity": {
+        "segment": "0.0",
+        "customers": 4849,
+        "churn_rate_pct": 26.87
+    },
+    "highest_risk_age_group": {
+        "segment": "46-55",
+        "customers": 1311,
+        "churn_rate_pct": 50.57
+    },
+    "highest_risk_product_count": {
+        "segment": "4.0",
+        "customers": 60,
+        "churn_rate_pct": 100.0
+    },
+    "modelling_exclusions": [
+        "RowNumber",
+        "CustomerId",
+        "Surname",
+        "Complain"
+    ],
+    "notes": [
+        "Associations do not establish causality.",
+        "Segment rankings are descriptive.",
+        "Complain may contain target leakage.",
+        "Verify feature availability at prediction time."
+    ]
+}

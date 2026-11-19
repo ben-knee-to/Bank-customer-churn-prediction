@@ -1,0 +1,3 @@
+customer_type,predicted_probability,threshold,predicted_churn
+high_risk,0.988897979259491,0.30999999999999994,1
+low_risk,0.005855895113199949,0.30999999999999994,0

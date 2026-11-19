@@ -1,0 +1,58 @@
+{
+    "total_records": 10000,
+    "training_records": 8000,
+    "test_records": 2000,
+    "training_churn_rate": 0.20375,
+    "test_churn_rate": 0.204,
+    "original_feature_count": 10,
+    "transformed_feature_count": 15,
+    "numeric_features": [
+        "CreditScore",
+        "Age",
+        "Tenure",
+        "Balance",
+        "NumOfProducts",
+        "EstimatedSalary"
+    ],
+    "categorical_features": [
+        "Geography",
+        "Gender",
+        "HasCrCard",
+        "IsActiveMember"
+    ],
+    "excluded_features": [
+        "RowNumber",
+        "CustomerId",
+        "Surname",
+        "Complain",
+        "Satisfaction Score",
+        "Card Type",
+        "Point Earned"
+    ],
+    "random_state": 42,
+    "test_size": 0.2,
+    "split_method": "stratified_random",
+    "feature_names": [
+        "CreditScore",
+        "Age",
+        "Tenure",
+        "Balance",
+        "NumOfProducts",
+        "EstimatedSalary",
+        "Geography_France",
+        "Geography_Germany",
+        "Geography_Spain",
+        "Gender_Female",
+        "Gender_Male",
+        "HasCrCard_0",
+        "HasCrCard_1",
+        "IsActiveMember_0",
+        "IsActiveMember_1"
+    ],
+    "notes": [
+        "Holdout test set reserved for final evaluation.",
+        "Preprocessing must be refitted within each CV fold.",
+        "Complain excluded due to suspected target leakage.",
+        "Feature timing has not been independently verified."
+    ]
+}

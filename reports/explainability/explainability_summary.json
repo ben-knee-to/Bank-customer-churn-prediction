@@ -1,0 +1,57 @@
+{
+    "model": "XGBoost",
+    "sample_size": 500,
+    "sample_source": "training_partition",
+    "decision_threshold": 0.30999999999999994,
+    "shap_output_units": "raw_log_odds",
+    "top_features": [
+        {
+            "feature": "Age",
+            "mean_absolute_shap": 0.861764132976532
+        },
+        {
+            "feature": "NumOfProducts",
+            "mean_absolute_shap": 0.8064329624176025
+        },
+        {
+            "feature": "IsActiveMember_0",
+            "mean_absolute_shap": 0.3210187554359436
+        },
+        {
+            "feature": "Geography_Germany",
+            "mean_absolute_shap": 0.2326280176639557
+        },
+        {
+            "feature": "Balance",
+            "mean_absolute_shap": 0.22480560839176178
+        },
+        {
+            "feature": "Gender_Female",
+            "mean_absolute_shap": 0.21548332273960114
+        },
+        {
+            "feature": "EstimatedSalary",
+            "mean_absolute_shap": 0.10849520564079285
+        },
+        {
+            "feature": "CreditScore",
+            "mean_absolute_shap": 0.10396907478570938
+        },
+        {
+            "feature": "IsActiveMember_1",
+            "mean_absolute_shap": 0.06514815241098404
+        },
+        {
+            "feature": "Geography_France",
+            "mean_absolute_shap": 0.04119518771767616
+        }
+    ],
+    "limitations": [
+        "SHAP explains model predictions, not causality.",
+        "Explanations use a training-data sample.",
+        "SHAP values are in raw-margin/log-odds units.",
+        "One-hot encoded categories appear separately.",
+        "Holdout data was not used for explanations.",
+        "Feature availability at prediction time still requires verification."
+    ]
+}

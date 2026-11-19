@@ -1,0 +1,14 @@
+{
+    "total_customers": 10000,
+    "total_columns": 18,
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "unique_customer_ids": 10000,
+    "churned_customers": 2038,
+    "retained_customers": 7962,
+    "churn_rate": 0.2038,
+    "target": "Exited",
+    "potential_leakage_columns": [
+        "Complain"
+    ]
+}
